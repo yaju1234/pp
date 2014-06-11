@@ -1,0 +1,92 @@
+{
+
+    "list":[
+        {   "id": "234",
+            "fname":"Yaj",
+            "lname":"Mandal",
+            "user_image": "http://www.manipalworldnews.com/wp-content/uploads/2014/03/souarv_mwn.jpg",
+            "post1":{
+               "type":"video",
+                "url":"NYtB6mlu7vA"
+            },
+            "post2":{
+               "type":"image",
+                "url":"https://www.ricoh.com/r_dc/cx/cx1/img/sample_04.jpg"
+            }
+        },
+         {   "id": "234",
+            "fname":"Yaj",
+            "lname":"Mandal",
+             "user_image": "http://www.manipalworldnews.com/wp-content/uploads/2014/03/souarv_mwn.jpg",
+            "post1":{
+                "type":"video",
+                "url":"yhv8l9F44qo"
+            },
+            "post2":{
+                "type":"image",
+                "url":"http://celebnwall.com/wp-content/uploads/2014/03/SteveJobs-Quote.jpg"
+            }
+        },
+         {   "id": "234",
+            "fname":"Yaj",
+            "lname":"Mandal",
+             "user_image": "http://www.manipalworldnews.com/wp-content/uploads/2014/03/souarv_mwn.jpg",
+            "post1":{
+                "id":"123",
+                "type":"video",
+                "url":"MP1gvGcXcLk"
+            },
+            "post2":{
+                "id":"123",
+                "type":"image",
+                "url":"http://cnet4.cbsistatic.com/hub/i/r/2014/02/28/37eb60fd-b0b5-11e3-a24e-d4ae52e62bcc/thumbnail/770x433/6425a6b04f14e6b7eb5466d16d46d4bd/AppPrime-SamsungGalaxyS5.jpg"
+            }
+        },
+         {   "id": "234",
+            "fname":"Yaj",
+            "lname":"Mandal",
+             "user_image": "http://www.manipalworldnews.com/wp-content/uploads/2014/03/souarv_mwn.jpg",
+            "post1":{
+                "id":"123",
+                "type":"video",
+                "url":"V3SAS1xpQw0"
+            },
+            "post2":{
+                "id":"123",
+                "type":"image",
+                "url":"http://echoofindia.com/sites/default/files/citizenjourno/Sourav_3.jpg"
+            }
+        },
+         {   "id": "234",
+            "fname":"Yaj",
+            "lname":"Mandal",
+             "user_image": "http://www.manipalworldnews.com/wp-content/uploads/2014/03/souarv_mwn.jpg",
+            "post1":{
+                "id":"123",
+                "type":"video",
+                "url":"hpQsg1BTyDw"
+            },
+            "post2":{
+                "id":"123",
+                "type":"image",
+                "url":"http://thefabweb.com/wp-content/uploads/2012/02/puffins-pair_32034_600x450.jpg"
+            }
+        },
+         {   "id": "234",
+            "fname":"Yaj",
+            "lname":"Mandal",
+             "user_image": "http://www.manipalworldnews.com/wp-content/uploads/2014/03/souarv_mwn.jpg",
+            "post1":{
+                "id":"123",
+                "type":"video",
+                "url":"89nzm0BmCy0"
+            },
+            "post2":{
+                "id":"123",
+                "type":"image",
+                "url":"http://stylonica.com/wp-content/uploads/2014/02/nature.jpg"
+            }
+        }
+    ]
+
+}

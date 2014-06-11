@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appsbee.pairpost"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name="com.appsbee.pairpost.application.PairPostApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/pp_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.appsbee.pairpost.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <!-- <intent-filter >
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter> -->
+        </activity>
+        <activity android:name="com.appsbee.pairpost.activity.MakePairPostActivity" >
+          <!-- <intent-filter >
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter> -->
+        </activity>
+        <activity android:name="com.appsbee.pairpost.activity.CameraTest" >
+        </activity>
+        <activity android:name="com.appsbee.pairpost.activity.CameraTest2" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter >
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.RegistrationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.ChooseLoginOrRegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.UserAgreementActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.SettingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.AccountInformationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.AboutPairPostActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.SharingSettingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.NotificationsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.PrivacySettingsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.TermsOfServiceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.ContactUsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.appsbee.pairpost.activity.OtherUserProfile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ru.bartwell.exfilepicker.ExFilePickerActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/CheckBoxExFilePickerThemeLight" />
+        
+        <activity
+            android:name="com.appsbee.pairpost.activity.DiscoverPairPostDetail"
+             android:theme="@android:style/Theme.Light.NoTitleBar"
+           android:screenOrientation="portrait" />
+         <activity
+            android:name="com.appsbee.pairpost.activity.ActivityVideoView"
+           android:screenOrientation="portrait" />
+         <activity
+            android:name="com.appsbee.pairpost.activity.ImageFullScreennView"
+           android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

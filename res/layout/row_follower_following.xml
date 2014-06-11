@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.appsbee.pairpost.activity.CircleImageView
+        android:id="@+id/ivUserPic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/profile_img"
+        app:border_color="#ffffff"
+        app:border_width="1dp" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/ivUserPic"
+        android:text="Ron Tinner"
+        android:textColor="#0182CD" />
+
+</RelativeLayout>

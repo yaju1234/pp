@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_row"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:background="@null"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:id="@+id/ll_user_image_bg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+         android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.appsbee.pairpost.activity.CircleImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/test"
+            app:border_width="1dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/ll_user_image_bg" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+            android:id="@+id/lbl_comments_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Minutes ago"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp" />
+             <TextView
+            android:id="@+id/lbl_comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#20ee29"
+            android:text="Beautilo" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/lbl_comment_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:text="Nice pic" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lbl_comments_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Minutes ago"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_user_image_bg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+         android:gravity="center"
+        android:orientation="vertical" >
+
+        <com.appsbee.pairpost.activity.CircleImageView
+            android:id="@+id/iv_user_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/test"
+            app:border_width="1dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/ll_user_image_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lbl_comment_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#20ee29"
+            android:text="Beautilo" />
+
+        <TextView
+            android:id="@+id/lbl_comment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:text="Nice pic" />
+
+    </RelativeLayout>
+
+    
+
+</RelativeLayout> -->

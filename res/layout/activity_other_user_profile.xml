@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFEEDB"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2"
+        android:background="#0080CB" >
+
+        <ImageView
+            android:id="@+id/ivOtherUserProfilePic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/profile_img" />
+
+        <TextView
+            android:id="@+id/tvOtherUserProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ivOtherUserProfilePic"
+            android:text="Valen95"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btOtherUserProfileFollowFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvOtherUserProfileName"
+            android:layout_toRightOf="@id/ivOtherUserProfilePic"
+            android:background="@drawable/bt_follow_bg"
+            android:text="Follow"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/ivOtherUserProfileGridIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_grid_unselected" />
+
+        <ImageView
+            android:id="@+id/ivOtherUserProfileListIcon"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/ivOtherUserProfileGridIcon"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_list_selected" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btInnertabBio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4A647D"
+            android:text="Bio"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btInnertabPairPost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="#142840"
+            android:text="Pair Post"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btInnertabFollwers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="#142840"
+            android:text="Followers"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btInnertabFollowing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="#142840"
+            android:text="Following"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLoading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".7"
+        android:background="@android:color/white" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpOtherUserProfileTabConatiner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/pbLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</LinearLayout>

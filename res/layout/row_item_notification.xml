@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/ivUserPhoto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/profile_img" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivUserPhoto"
+        android:layout_toRightOf="@id/ivUserPhoto"
+        android:text="Valen95"
+        android:textColor="#1C8ED4"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvUserAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ivUserPhoto"
+        android:text="Liked Your Pair Post" />
+
+    <TextView
+        android:id="@+id/tvNotificationTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/ivUserPhoto"
+        android:layout_marginRight="5dp"
+        android:text="12 minutes ago" />
+
+</RelativeLayout>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5" >
+
+        <ImageView
+            android:id="@+id/ivTopSnapshotImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pp_icon"
+            android:scaleType="fitXY" >
+        </ImageView>
+
+        <VideoView
+            android:id="@+id/vvTopRecordedVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+        </VideoView>
+
+        <ImageView
+            android:id="@+id/iv_post1_video_play_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/grid_item_discover_play" />
+
+        <RelativeLayout
+            android:id="@+id/rlCameraPreviewPanelTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+
+            <SurfaceView
+                android:id="@+id/svCameraPreviewTop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--
+                 <Button
+                android:id="@+id/btGalleryTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:text="Gallery" />
+            -->
+
+            <Button
+                android:id="@+id/btRotateCameraTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="R" />
+
+            <Button
+                android:id="@+id/btFlashCameraTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/btRotateCameraTop"
+                android:layout_marginRight="10dp"
+                android:text="F" />
+
+            <Button
+                android:id="@+id/btTakePhotoTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Shoot" />
+
+            <Button
+                android:id="@+id/btTakeVideoTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Record" />
+
+            <TextView
+                android:id="@+id/tvTopPreviewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/btTakePhotoTop"
+                android:layout_alignParentBottom="true"
+                android:layout_alignTop="@id/btTakePhotoTop"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="00:00:00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff0000" />
+
+            <ProgressBar
+                android:id="@+id/pbTopPreviewTimeLine"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btTakePhotoTop"
+                android:layout_marginBottom="5dp"
+                android:max="30" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlControlPanelTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/ivCameraTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_camera" />
+
+            <ImageView
+                android:id="@+id/ivGalleryTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ivCameraTop"
+                android:src="@drawable/ic_gallery" />
+
+            <ImageView
+                android:id="@+id/ivRecorderTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivCameraTop"
+                android:src="@drawable/ic_recorder" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5" >
+
+        <ImageView
+            android:id="@+id/ivBottomSnapshotImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" >
+        </ImageView>
+
+        <VideoView
+            android:id="@+id/vvBottomRecordedVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+        </VideoView>
+
+        <ImageView
+            android:id="@+id/iv_post2_video_play_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/grid_item_discover_play" />
+
+        <RelativeLayout
+            android:id="@+id/rlCameraPreviewPanelBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <SurfaceView
+                android:id="@+id/svCameraPreviewBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--
+                 <Button
+                android:id="@+id/btGalleryBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:text="Gallery" />
+            -->
+
+            <Button
+                android:id="@+id/btRotateCameraBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="R" />
+
+            <Button
+                android:id="@+id/btFlashCameraBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/btRotateCameraBottom"
+                android:layout_marginRight="10dp"
+                android:text="F" />
+
+            <Button
+                android:id="@+id/btTakePhotoBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Shoot" />
+
+            <Button
+                android:id="@+id/btTakeVideoBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Record" />
+
+            <TextView
+                android:id="@+id/tvBottomPreviewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/btTakePhotoBottom"
+                android:layout_alignParentBottom="true"
+                android:layout_alignTop="@id/btTakePhotoBottom"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="00:00:00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ff0000" />
+
+            <ProgressBar
+                android:id="@+id/pbBottomPreviewTimeLine"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btTakePhotoBottom"
+                android:layout_marginBottom="5dp"
+                android:max="30" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlControlPanelBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/ivCameraBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_camera" />
+
+            <ImageView
+                android:id="@+id/ivGalleryBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ivCameraBottom"
+                android:src="@drawable/ic_gallery" />
+
+            <ImageView
+                android:id="@+id/ivRecorderBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivCameraBottom"
+                android:src="@drawable/ic_recorder" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

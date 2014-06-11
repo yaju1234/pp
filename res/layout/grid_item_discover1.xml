@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_list_row"
+    android:layout_width="150dp"
+    android:layout_height="260dp"
+    android:background="@drawable/grid_item_border"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+         android:duplicateParentState="true"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/vv_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:adjustViewBounds="true"
+              android:duplicateParentState="true"
+            android:scaleType="fitXY"
+             />
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+             android:duplicateParentState="true"
+            android:src="@drawable/test" />
+
+        <ImageView
+            android:id="@+id/iv_play_icon_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+             android:duplicateParentState="true"
+            android:src="@drawable/grid_item_discover_play" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/vv_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+             android:duplicateParentState="true"
+            android:scaleType="fitXY"
+            />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+             android:duplicateParentState="true"
+            android:src="@drawable/test" />
+
+        <ImageView
+            android:id="@+id/iv_play_icon_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+             android:duplicateParentState="true"
+            android:src="@drawable/grid_item_discover_play" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0080CB" >
+
+        <Button
+            android:id="@+id/btNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:drawableTop="@drawable/ic_notification_button"
+            android:text="5 new"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/ivPairPostNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_pair_post_notification" />
+
+        <View
+            android:id="@+id/cp"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tvPairPostNotificationCount"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/green_orangle_circle"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="3"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+    <!-- com.appsbee.pairpost.view.HorizontialListView -->
+
+    <Gallery
+        android:id="@+id/galleryPairFeed"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="10dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" />
+
+</LinearLayout>

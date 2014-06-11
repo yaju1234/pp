@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,ContentDescription" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="HardcodedText,ContentDescription" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rlViewPanelTop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/ivSnapshotImageTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pp_icon" >
+                </ImageView>
+
+                <com.appsbee.pairpost.activity.CustomVideoView
+                    android:id="@+id/vvRecordedVideoTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" >
+                </com.appsbee.pairpost.activity.CustomVideoView>
+
+                <ImageView
+                    android:id="@+id/ivPlayButtonTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/grid_item_discover_play" />
+
+                <LinearLayout
+                    android:id="@+id/ll_post_tag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="#80000000"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/lbl_post_tag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:text="Very nice!!!" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlControlPanelTop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/ivCameraTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_camera" />
+
+                <ImageView
+                    android:id="@+id/ivGalleryTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                      android:layout_margin="10dp"
+                    android:src="@drawable/ic_gallery" />
+
+                <ImageView
+                    android:id="@+id/ivRecorderTop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                      android:layout_margin="10dp"
+                    android:src="@drawable/ic_recorder" />
+            </RelativeLayout>
+        </RelativeLayout>
+<LinearLayout
+           android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.7"
+            android:background="#0081cd"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+        <LinearLayout
+            android:id="@+id/llSettingsPanel"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+           android:background="#0081cd"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_cancel_post"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/green_btn"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btn_caption_post"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/green_btn"
+                android:text="Caption" />
+
+            <Button
+                android:id="@+id/btn_share_post"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/green_btn"
+                android:text="Share" />
+
+            <Button
+                android:id="@+id/btn_submit_post"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/green_btn"
+                android:text="Submit" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/rlViewPanelBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/ivSnapshotImageBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" >
+                </ImageView>
+
+                <com.appsbee.pairpost.activity.CustomVideoView
+                    android:id="@+id/vvRecordedVideoBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true" >
+                </com.appsbee.pairpost.activity.CustomVideoView>
+
+                <ImageView
+                    android:id="@+id/ivPlayButtonBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/grid_item_discover_play" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlControlPanelBottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/ivCameraBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_camera" />
+
+                <ImageView
+                    android:id="@+id/ivGalleryBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                      android:layout_margin="10dp"
+                    android:src="@drawable/ic_gallery" />
+
+                <ImageView
+                    android:id="@+id/ivRecorderBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                      android:layout_margin="10dp"
+                    android:src="@drawable/ic_recorder" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
